@@ -1,5 +1,6 @@
 ---
 import { translations } from '../utils/translations';
+import { getPath } from '../utils/navigation';
 const t = translations.en;
 ---
 
@@ -25,7 +26,7 @@ const t = translations.en;
           <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">{t.home.featured.ddys.tags.split(' • ')[2]}</span>
         </div>
         <a
-          href="/projects#ddys"
+          href={`${getPath('/projects')}#ddys`}
           class="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg transition-all"
         >
           {t.home.featured.ddys.cta}
@@ -47,7 +48,7 @@ const t = translations.en;
           <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">{t.home.featured.bigdata.tags.split(' • ')[2]}</span>
         </div>
         <a
-          href="/projects#bigdata"
+          href={`${getPath('/projects')}#bigdata`}
           class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition-all"
         >
           {t.home.featured.bigdata.cta}
