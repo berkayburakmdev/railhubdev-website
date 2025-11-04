@@ -1,0 +1,99 @@
+---
+import { translations } from '../utils/translations';
+const t = translations.en;
+---
+
+<section id="featured-projects" class="py-20 px-4 bg-dark-secondary/30">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      {t.home.featured.title}
+    </h2>
+    
+    <div id="projects-grid" class="grid md:grid-cols-2 gap-8 opacity-0">
+      <!-- DDYS Card -->
+      <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20">
+        <div class="w-full h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg mb-6 flex items-center justify-center">
+          <span class="text-6xl">🚂</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">{t.home.featured.ddys.title}</h3>
+        <p class="text-gray-400 mb-4">
+          {t.home.featured.ddys.description}
+        </p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">{t.home.featured.ddys.tags.split(' • ')[0]}</span>
+          <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs">{t.home.featured.ddys.tags.split(' • ')[1]}</span>
+          <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">{t.home.featured.ddys.tags.split(' • ')[2]}</span>
+        </div>
+        <a
+          href="/projects#ddys"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg transition-all"
+        >
+          {t.home.featured.ddys.cta}
+        </a>
+      </div>
+      
+      <!-- Big Data Platform Card -->
+      <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-cyan-500/50 transition-all hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/20">
+        <div class="w-full h-48 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-lg mb-6 flex items-center justify-center">
+          <span class="text-6xl">📊</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">{t.home.featured.bigdata.title}</h3>
+        <p class="text-gray-400 mb-4">
+          {t.home.featured.bigdata.description}
+        </p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">{t.home.featured.bigdata.tags.split(' • ')[0]}</span>
+          <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">{t.home.featured.bigdata.tags.split(' • ')[1]}</span>
+          <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">{t.home.featured.bigdata.tags.split(' • ')[2]}</span>
+        </div>
+        <a
+          href="/projects#bigdata"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg transition-all"
+        >
+          {t.home.featured.bigdata.cta}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const projectsSection = document.getElementById('featured-projects');
+    if (projectsSection) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const grid = entry.target.querySelector('#projects-grid');
+              if (grid) {
+                grid.classList.add('animate-fade-in');
+              }
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      observer.observe(projectsSection);
+    }
+  });
+</script>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+  
+</style>
+

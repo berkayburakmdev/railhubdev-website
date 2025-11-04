@@ -1,0 +1,272 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <section class="min-h-screen px-4 py-24 pt-32">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+          Our Expertise
+        </h1>
+        <p class="text-xl text-gray-300 mb-4">
+          Mastering the Intersection of AI, Data, and Enterprise Engineering
+        </p>
+        <p class="text-gray-400 max-w-3xl mx-auto">
+          Deep technical knowledge meets real-world problem solving
+        </p>
+      </div>
+      
+      <!-- AI & Machine Intelligence Section -->
+      <div class="mb-16">
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-2xl p-8 border border-white/10 mb-8">
+          <h2 class="text-4xl font-bold mb-2">🤖 Artificial Intelligence & Machine Learning</h2>
+          <p class="text-gray-400 mb-6">
+            Transforming complex industrial data into intelligent action
+          </p>
+        </div>
+        
+        <div class="space-y-6">
+          <!-- LLMs -->
+          <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">🧠 Large Language Models (LLMs)</h3>
+            <p class="text-gray-300 mb-4">
+              Natural Language Understanding & Generation for railway domain applications
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Capabilities:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Custom LLM fine-tuning for railway domain</li>
+                  <li>• RAG (Retrieval-Augmented Generation) systems</li>
+                  <li>• Intelligent document processing</li>
+                  <li>• Natural language to SQL query translation</li>
+                  <li>• Conversational AI for operators</li>
+                  <li>• Multilingual support (Turkish, English, +)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Use Cases:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Smart search across 1000+ technical documents</li>
+                  <li>• Automated report generation from raw data</li>
+                  <li>• Voice-activated command systems</li>
+                  <li>• Intelligent chatbots for customer service</li>
+                  <li>• Anomaly explanation in plain language</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <p class="text-gray-300 text-sm mb-2"><strong>Technologies:</strong></p>
+              <p class="text-gray-400 text-xs">
+                OpenAI GPT models, Custom transformers (BERT, T5), LangChain for orchestration,
+                Vector databases (Pinecone, Weaviate), Prompt engineering frameworks
+              </p>
+              <p class="text-gray-300 text-sm mt-3"><strong>Recent Projects:</strong></p>
+              <ul class="text-gray-400 text-xs space-y-1 ml-4">
+                <li>• Railway regulation query system (98% accuracy)</li>
+                <li>• Maintenance log analysis (70% time savings)</li>
+                <li>• Multi-language documentation translation</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- AI Agents -->
+          <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">🤝 AI Agents & Agent-to-Agent (A2A) Communication</h3>
+            <p class="text-gray-300 mb-4">
+              Autonomous Systems That Collaborate
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Architecture:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Multi-agent systems (MAS)</li>
+                  <li>• Goal-oriented behavior planning</li>
+                  <li>• Inter-agent communication protocols</li>
+                  <li>• Distributed decision making</li>
+                  <li>• Emergent intelligence from collaboration</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Agent Types:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Monitoring Agents: Watch systems, detect anomalies</li>
+                  <li>• Planning Agents: Optimize schedules and routes</li>
+                  <li>• Execution Agents: Perform automated tasks</li>
+                  <li>• Coordination Agents: Orchestrate workflows</li>
+                  <li>• Learning Agents: Improve through experience</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <p class="text-gray-300 text-sm mb-2"><strong>Real-World Applications:</strong></p>
+              <ul class="text-gray-400 text-xs space-y-1 ml-4">
+                <li>• Autonomous maintenance scheduling</li>
+                <li>• Multi-train coordination in congested networks</li>
+                <li>• Distributed resource allocation</li>
+                <li>• Self-healing system architectures</li>
+              </ul>
+              <p class="text-gray-300 text-sm mt-3"><strong>Technologies:</strong></p>
+              <p class="text-gray-400 text-xs">
+                Python-based agent frameworks, MQTT for agent messaging, Kubernetes for agent deployment,
+                Reinforcement learning (PPO, DQN)
+              </p>
+            </div>
+          </div>
+          
+          <!-- MCP -->
+          <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">🔗 Model Context Protocol (MCP)</h3>
+            <p class="text-gray-300 mb-4">
+              Seamless AI-to-Enterprise Integration
+            </p>
+            
+            <div class="mb-4">
+              <p class="text-gray-300 mb-3">
+                A standardized protocol enabling AI models to interact seamlessly with enterprise software,
+                databases, and external APIs without custom integration code for each system.
+              </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Our Implementation:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Universal adapter layer for legacy systems</li>
+                  <li>• Context-aware model invocation</li>
+                  <li>• Secure credential management</li>
+                  <li>• Request/response standardization</li>
+                  <li>• Version control for model updates</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Benefits:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Plug-and-play AI integration</li>
+                  <li>• Reduced development time (60% faster)</li>
+                  <li>• Consistent behavior across systems</li>
+                  <li>• Easy model swapping/A-B testing</li>
+                  <li>• Audit trails for AI decisions</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <p class="text-gray-300 text-sm mb-2"><strong>Technology Stack:</strong></p>
+              <p class="text-gray-400 text-xs">
+                gRPC for high-performance communication, Protocol Buffers for serialization,
+                OAuth2 for authentication, OpenAPI for documentation
+              </p>
+            </div>
+          </div>
+          
+          <!-- Big Data Analytics -->
+          <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-2xl font-bold mb-4">📊 Big Data Analytics</h3>
+            <p class="text-gray-300 mb-4">
+              Massive-Scale Data Processing & Insights
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Data Scale:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• 10+ TB processed daily</li>
+                  <li>• 100+ million records/day</li>
+                  <li>• Real-time streaming + batch processing</li>
+                  <li>• 5+ years historical data retention</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Analytics Capabilities:</p>
+                <ul class="text-gray-300 text-sm space-y-1 ml-4">
+                  <li>• Descriptive: What happened?</li>
+                  <li>• Diagnostic: Why did it happen?</li>
+                  <li>• Predictive: What will happen?</li>
+                  <li>• Prescriptive: What should we do?</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4 mb-4">
+              <p class="text-gray-300 text-sm mb-2"><strong>Specialized Analytics:</strong></p>
+              <ul class="text-gray-400 text-xs space-y-1 ml-4">
+                <li>• Network analysis (graph algorithms)</li>
+                <li>• Spatial analytics (GIS integration)</li>
+                <li>• Text analytics (NLP on logs)</li>
+                <li>• Sensor data fusion</li>
+              </ul>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <p class="text-gray-300 text-sm mb-2"><strong>Technologies:</strong></p>
+              <p class="text-gray-400 text-xs">
+                Apache Spark (distributed processing), Apache Flink (stream processing),
+                Hadoop ecosystem (HDFS, Hive), Presto (interactive queries),
+                Databricks (unified analytics), Elasticsearch (search analytics)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Expertise Sections -->
+      <div class="grid md:grid-cols-2 gap-6 mb-16">
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+          <h3 class="text-2xl font-bold mb-4">⚙️ Enterprise Software Engineering</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>• Microservices architecture design</li>
+            <li>• Event-driven systems</li>
+            <li>• API design & development</li>
+            <li>• Cloud-native applications</li>
+            <li>• DevOps & CI/CD pipelines</li>
+            <li>• Security & compliance</li>
+          </ul>
+        </div>
+        
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+          <h3 class="text-2xl font-bold mb-4">🗄️ Data Architecture</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>• Data lake & warehouse design</li>
+            <li>• ETL/ELT pipelines</li>
+            <li>• Real-time data streaming</li>
+            <li>• Master data management</li>
+            <li>• Data governance & quality</li>
+            <li>• Database optimization</li>
+          </ul>
+        </div>
+        
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+          <h3 class="text-2xl font-bold mb-4">🌐 GIS & Spatial Intelligence</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>• Geospatial data processing</li>
+            <li>• Real-time location tracking</li>
+            <li>• Map visualization & rendering</li>
+            <li>• Route optimization</li>
+            <li>• Asset mapping & management</li>
+            <li>• Geofencing & alerts</li>
+          </ul>
+        </div>
+        
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+          <h3 class="text-2xl font-bold mb-4">🔐 Security & Compliance</h3>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li>• Identity & access management</li>
+            <li>• SSO & federation</li>
+            <li>• Data encryption & privacy</li>
+            <li>• GDPR compliance</li>
+            <li>• Security auditing & monitoring</li>
+            <li>• Penetration testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+

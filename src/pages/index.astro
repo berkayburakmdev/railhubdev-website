@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/Hero.astro';
+import StatsBar from '../components/StatsBar.astro';
+import PrinciplesGrid from '../components/PrinciplesGrid.astro';
+import FeaturedProjects from '../components/FeaturedProjects.astro';
+import TechShowcase from '../components/TechShowcase.astro';
+import CallToAction from '../components/CallToAction.astro';
+---
+
+<MainLayout>
+  <Hero />
+  <StatsBar />
+  <PrinciplesGrid />
+  <FeaturedProjects />
+  <TechShowcase />
+  <CallToAction />
+</MainLayout>
+
+<style>
+  :global(body) {
+    background: linear-gradient(135deg, #050814 0%, #0a0e27 100%);
+    min-height: 100vh;
+  }
+</style>
+

@@ -1,0 +1,113 @@
+---
+import { translations } from '../utils/translations';
+const t = translations.en;
+---
+
+<section id="hero-section" class="min-h-screen flex items-center justify-center px-4 py-20 pt-32 relative overflow-hidden">
+  <!-- Animated background gradient mesh -->
+  <div class="absolute inset-0 opacity-30">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+  
+  <div class="container mx-auto max-w-5xl relative z-10 text-center">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-gradient">
+      {t.home.hero.title}
+    </h1>
+    
+    <p class="text-xl md:text-2xl text-gray-300 mb-8 opacity-0 fade-in-delay">
+      {t.home.hero.subtitle}
+    </p>
+    
+    <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed opacity-0 fade-in-delay-2">
+      {t.home.hero.description}
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0 fade-in-delay-3">
+      <a
+        href="/projects"
+        class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all"
+      >
+        {t.home.hero.ctaPrimary}
+      </a>
+      <a
+        href="/about"
+        class="px-8 py-4 bg-dark-tertiary border border-white/10 text-white rounded-lg font-semibold hover:border-white/20 hover:scale-105 transition-all"
+      >
+        {t.home.hero.ctaSecondary}
+      </a>
+    </div>
+    
+    <div class="flex flex-col items-center gap-2 opacity-0 fade-in-delay-4">
+      <span class="text-sm text-gray-400">{t.home.hero.scroll}</span>
+      <svg class="w-6 h-6 text-gray-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Intersection Observer for fade-in animations
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroSection = document.getElementById('hero-section');
+    if (heroSection) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-fade-in');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(heroSection);
+    }
+  });
+</script>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-delay {
+    animation: fade-in 0.8s ease-out 0.2s forwards;
+  }
+  
+  .fade-in-delay-2 {
+    animation: fade-in 0.8s ease-out 0.4s forwards;
+  }
+  
+  .fade-in-delay-3 {
+    animation: fade-in 0.8s ease-out 0.6s forwards;
+  }
+  
+  .fade-in-delay-4 {
+    animation: fade-in 0.8s ease-out 0.8s forwards;
+  }
+  
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
+  }
+  
+  @keyframes gradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+</style>
+

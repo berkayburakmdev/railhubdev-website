@@ -1,0 +1,311 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <section class="min-h-screen px-4 py-24 pt-32">
+    <div class="container mx-auto max-w-6xl">
+      <!-- Hero Section -->
+      <div class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+          Our Projects
+        </h1>
+        <p class="text-xl text-gray-300 mb-4">
+          Transforming Railway Operations Through Digital Innovation
+        </p>
+        <p class="text-gray-400 max-w-3xl mx-auto">
+          From concept to nationwide deployment, every project showcases our commitment to excellence
+        </p>
+      </div>
+      
+      <!-- DDYS Project -->
+      <div id="ddys" class="mb-20">
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-2xl p-8 md:p-12 border border-white/10 mb-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-6xl">🚂</div>
+            <div>
+              <h2 class="text-4xl md:text-5xl font-bold mb-2">DDYS - Digital Railway Management System</h2>
+              <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+                <span>Client: Turkish State Railways (TCDD)</span>
+                <span>•</span>
+                <span>Status: Production | Active Development</span>
+                <span>•</span>
+                <span>Timeline: 2020 - Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The Challenge -->
+        <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 mb-8">
+          <h3 class="text-2xl font-bold mb-4">The Challenge</h3>
+          <p class="text-gray-300 leading-relaxed mb-4">
+            Turkish State Railways needed a complete digital transformation—
+            moving from fragmented, legacy systems to a unified, intelligent
+            platform capable of managing the entire railway network in real-time.
+          </p>
+          <p class="text-gray-300 font-semibold mb-2">The system had to handle:</p>
+          <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+            <li>10,000+ daily train operations</li>
+            <li>50+ different legacy data sources</li>
+            <li>Real-time safety-critical decisions</li>
+            <li>Integration with European railway standards</li>
+            <li>Scalability for 10+ years of growth</li>
+          </ul>
+        </div>
+        
+        <!-- Our Solution -->
+        <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 mb-8">
+          <h3 class="text-2xl font-bold mb-4">Our Solution - A Modern Microservices Ecosystem</h3>
+          
+          <!-- Core Platform Architecture -->
+          <div class="mb-6">
+            <h4 class="text-xl font-semibold mb-3">🏗️ Core Platform Architecture</h4>
+            <div class="bg-dark-quaternary/50 rounded-lg p-4 mb-4">
+              <p class="text-gray-300 mb-3"><strong>Foundation:</strong> Cloud-Native Microservices</p>
+              <ul class="list-disc list-inside space-y-1 text-gray-300 text-sm ml-4 mb-3">
+                <li>500+ independent microservices</li>
+                <li>Event-driven communication (Kafka/RabbitMQ)</li>
+                <li>API Gateway with intelligent routing</li>
+                <li>Service mesh for observability</li>
+                <li>Zero-downtime deployments</li>
+              </ul>
+              <p class="text-gray-300 text-sm"><strong>Technology Stack:</strong></p>
+              <ul class="list-disc list-inside space-y-1 text-gray-400 text-sm ml-4">
+                <li>Backend: Java 17+, Spring Boot 3.x, Spring Cloud</li>
+                <li>Messaging: Apache Kafka, RabbitMQ</li>
+                <li>API Layer: REST, GraphQL, gRPC</li>
+                <li>Container Orchestration: Kubernetes</li>
+                <li>Service Discovery: Consul, Eureka</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Key Modules -->
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h5 class="font-semibold mb-2">🚂 Operational Planning Module</h5>
+              <p class="text-gray-300 text-sm mb-2">AI-powered timetable generation, dynamic route conflict resolution, weather-aware scheduling</p>
+              <p class="text-gray-400 text-xs"><strong>Impact:</strong> 30% improvement in scheduling accuracy</p>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h5 class="font-semibold mb-2">🔧 Asset Management Module</h5>
+              <p class="text-gray-300 text-sm mb-2">Real-time rolling stock tracking, predictive maintenance, equipment health monitoring</p>
+              <p class="text-gray-400 text-xs"><strong>Impact:</strong> 40% reduction in unexpected failures</p>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h5 class="font-semibold mb-2">📊 Performance Monitoring Dashboard</h5>
+              <p class="text-gray-300 text-sm mb-2">Live operational dashboards, custom KPI builder, anomaly detection alerts</p>
+              <p class="text-gray-400 text-xs"><strong>Features:</strong> Real-time tracking, predictive analytics</p>
+            </div>
+            
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h5 class="font-semibold mb-2">🔗 Data Integration Layer</h5>
+              <p class="text-gray-300 text-sm mb-2">50+ legacy system connectors, European railway data exchange, real-time external feeds</p>
+              <p class="text-gray-400 text-xs"><strong>Standards:</strong> ERA TSI, UIC specs, GDPR compliant</p>
+            </div>
+          </div>
+          
+          <!-- Business Impact -->
+          <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg p-6 border border-blue-500/20">
+            <h4 class="text-xl font-semibold mb-4">📈 Business Impact - By The Numbers</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Operational Efficiency:</p>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>+30% scheduling accuracy</li>
+                  <li>-25% manual planning hours</li>
+                  <li>-18% operational conflicts</li>
+                  <li>+22% resource utilization</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-gray-300 font-semibold mb-2">Cost Savings:</p>
+                <ul class="text-gray-300 text-sm space-y-1">
+                  <li>-35% maintenance costs</li>
+                  <li>-20% energy consumption</li>
+                  <li>-40% unplanned downtime</li>
+                  <li>€5M+ annual savings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Big Data Platform -->
+      <div id="bigdata" class="mb-20">
+        <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-2xl p-8 md:p-12 border border-white/10 mb-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-6xl">📊</div>
+            <div>
+              <h2 class="text-4xl md:text-5xl font-bold mb-2">Resource Planning & Big Data Analytics Platform</h2>
+              <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+                <span>Client: Turkish State Railways (TCDD)</span>
+                <span>•</span>
+                <span>Status: Production | Continuous Enhancement</span>
+                <span>•</span>
+                <span>Timeline: 2022 - Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- The Vision -->
+        <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 mb-8">
+          <h3 class="text-2xl font-bold mb-4">The Vision</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Transform TCDD from a data collector into a data-driven organization.
+            Create a single source of truth for all operational, financial, and
+            strategic data—then make that data accessible, understandable, and
+            actionable for everyone from executives to field operators.
+          </p>
+        </div>
+        
+        <!-- Platform Architecture -->
+        <div class="bg-dark-secondary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 mb-8">
+          <h3 class="text-2xl font-bold mb-6">Platform Architecture</h3>
+          
+          <div class="space-y-6">
+            <!-- Data Intelligence Core -->
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h4 class="text-xl font-semibold mb-3">🧠 AI/ML Models & Predictive Analytics</h4>
+              <p class="text-gray-300 text-sm mb-3">
+                Anomaly detection, demand forecasting, predictive maintenance, energy optimization,
+                customer behavior analysis, financial trend prediction
+              </p>
+              <p class="text-gray-400 text-xs mb-2"><strong>Impact:</strong> 40% more accurate demand predictions, 35% reduction in anomaly response time</p>
+              <p class="text-gray-400 text-xs"><strong>Tech Stack:</strong> Python, TensorFlow, PyTorch, MLflow, Kubernetes</p>
+            </div>
+            
+            <!-- Business Intelligence Suite -->
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h4 class="text-xl font-semibold mb-3">📊 Business Intelligence Suite</h4>
+              <p class="text-gray-300 text-sm mb-3">
+                Executive dashboards, operational views, departmental analytics, custom KPI builder,
+                scheduled reports, mobile-responsive views
+              </p>
+              <p class="text-gray-400 text-xs"><strong>Technology:</strong> Tableau Server, Custom React dashboards, PostgreSQL, MongoDB</p>
+            </div>
+            
+            <!-- Open Data Portal -->
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h4 class="text-xl font-semibold mb-3">🌐 Open Data Portal</h4>
+              <p class="text-gray-300 text-sm mb-3">
+                Public API for developers, downloadable datasets, interactive visualizations,
+                documentation & tutorials, developer sandbox
+              </p>
+              <p class="text-gray-400 text-xs"><strong>Technology:</strong> CKAN, RESTful API with Swagger docs, OAuth2</p>
+            </div>
+            
+            <!-- GIS-Based Live Tracking -->
+            <div class="bg-dark-quaternary/50 rounded-lg p-4">
+              <h4 class="text-xl font-semibold mb-3">🗺️ GIS-Based Live Tracking</h4>
+              <p class="text-gray-300 text-sm mb-3">
+                Live train position tracking, asset location management, network infrastructure mapping,
+                maintenance zones visualization, weather overlay integration
+              </p>
+              <p class="text-gray-400 text-xs"><strong>Technology:</strong> GeoServer, OpenLayers, PostGIS, WebGL</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Real-World Outcomes -->
+        <div class="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-lg p-6 border border-cyan-500/20">
+          <h4 class="text-xl font-semibold mb-4">✅ Transformation Results</h4>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-gray-300 font-semibold mb-2">Organizational Impact:</p>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li>Unified analytics across 15 departments</li>
+                <li>70% reduction in report generation time</li>
+                <li>Data-driven decision making culture</li>
+                <li>Increased cross-department collaboration</li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-gray-300 font-semibold mb-2">User Adoption:</p>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li>500+ active internal users</li>
+                <li>10,000+ monthly portal visitors</li>
+                <li>50+ external API consumers</li>
+                <li>95% user satisfaction score</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Technologies Used -->
+      <div class="mb-16">
+        <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Technologies Used
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">Backend</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>Java 17+, Spring Boot 3.x</li>
+              <li>Python 3.11+ (AI/ML)</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">Frontend</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>React 18+, TypeScript</li>
+              <li>Astro</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">Data & Analytics</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>PostgreSQL, MongoDB</li>
+              <li>Elasticsearch</li>
+              <li>Apache Kafka, Spark</li>
+            </ul>
+          </div>
+          
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">AI/ML</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>TensorFlow, PyTorch</li>
+              <li>Scikit-learn, XGBoost</li>
+              <li>MLflow</li>
+            </ul>
+          </div>
+          
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">Infrastructure</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>Kubernetes, Docker</li>
+              <li>Prometheus, Grafana</li>
+              <li>ELK Stack</li>
+            </ul>
+          </div>
+          
+          <div class="bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10">
+            <h3 class="text-lg font-semibold mb-3">Business Intelligence</h3>
+            <ul class="text-gray-300 text-sm space-y-1">
+              <li>Tableau Server</li>
+              <li>CKAN</li>
+              <li>GeoServer, OpenLayers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  section {
+    scroll-margin-top: 80px;
+  }
+</style>
+

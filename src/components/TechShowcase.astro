@@ -1,0 +1,102 @@
+---
+---
+
+<section id="tech-showcase" class="py-20 px-4">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      Our Tech Stack
+    </h2>
+    
+    <div id="tech-grid" class="flex flex-wrap justify-center gap-4 opacity-0">
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Java</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Spring Boot</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">React</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Astro</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">PostgreSQL</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">MongoDB</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Elasticsearch</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Kubernetes</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Docker</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Linux</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Tableau</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">CKAN</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">GeoServer</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">OpenLayers</span>
+      </div>
+      <div class="tech-item px-6 py-3 bg-dark-tertiary/50 backdrop-blur-lg rounded-lg border border-white/10 hover:border-blue-500/50 transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">
+        <span class="text-gray-300 font-medium">Keycloak</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const techSection = document.getElementById('tech-showcase');
+    if (techSection) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const grid = entry.target.querySelector('#tech-grid');
+              if (grid) {
+                grid.classList.add('animate-slide-in');
+                const items = grid.querySelectorAll('.tech-item');
+                items.forEach((item, index) => {
+                  (item as HTMLElement).style.animationDelay = `${index * 50}ms`;
+                });
+              }
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(techSection);
+    }
+  });
+</script>
+
+<style>
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.6s ease-out forwards;
+  }
+</style>
+

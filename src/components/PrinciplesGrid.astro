@@ -1,0 +1,93 @@
+---
+import { translations } from '../utils/translations';
+const t = translations.en;
+---
+
+<section class="py-20 px-4">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      {t.home.principles.title}
+    </h2>
+    
+    <div id="principles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">⚡</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.performance.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.performance.description}</p>
+      </div>
+      
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">🛡️</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.reliability.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.reliability.description}</p>
+      </div>
+      
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">💻</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.readability.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.readability.description}</p>
+      </div>
+      
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">✨</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.efficiency.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.efficiency.description}</p>
+      </div>
+      
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">📚</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.technology.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.technology.description}</p>
+      </div>
+      
+      <div class="principle-card bg-dark-tertiary/50 backdrop-blur-lg rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 opacity-0">
+        <div class="text-blue-400 mb-4 text-2xl">♻️</div>
+        <h3 class="text-xl font-bold mb-2">{t.home.principles.sustainability.title}</h3>
+        <p class="text-gray-400 text-sm">{t.home.principles.sustainability.description}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('principles-grid');
+    if (grid) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const cards = entry.target.querySelectorAll('.principle-card');
+              cards.forEach((card, index) => {
+                setTimeout(() => {
+                  card.classList.add('animate-slide-up');
+                }, index * 100);
+              });
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(grid);
+    }
+  });
+</script>
+
+<style>
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+  
+</style>
+
