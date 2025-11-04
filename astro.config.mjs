@@ -11,7 +11,7 @@ export default defineConfig({
     }),
   ],
   output: 'static',
-  site: 'https://railhubdev-landing.github.io',
-  base: '/',
+  site: 'https://berkayburakmdev.github.io',
+  base: '/railhubdev-website/',
 });
 

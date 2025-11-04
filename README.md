@@ -4,7 +4,7 @@ Modern, multi-page corporate website built with Astro for GitHub Pages deploymen
 
 ## 🚀 Live Demo
 
-[railhubdev-landing.github.io](https://railhubdev-landing.github.io)
+[berkayburakmdev.github.io/railhubdev-website](https://berkayburakmdev.github.io/railhubdev-website/)
 
 ## Getting Started
 
@@ -31,12 +31,12 @@ This project is fully configured for GitHub Pages deployment:
 1. **Repository Settings**:
    - Go to Settings → Pages
    - Source: "GitHub Actions"
-   - Custom domain: `railhubdev-landing.github.io`
+   - (No custom domain needed - using GitHub's default)
 
 2. **Automatic Deployment**:
    - Push to `main` branch automatically triggers deployment
    - Check Actions tab for deployment status
-   - Live site: https://railhubdev-landing.github.io
+   - Live site: https://berkayburakmdev.github.io/railhubdev-website/
 
 3. **Manual Deployment**:
    - Go to Actions tab
@@ -44,7 +44,7 @@ This project is fully configured for GitHub Pages deployment:
 
 ### Files Created:
 - `.github/workflows/deploy.yml` - GitHub Actions workflow
-- `CNAME` - Custom domain configuration
+- `CNAME` - Domain configuration (optional)
 - `.nojekyll` - Disables Jekyll processing
 - `scripts/copy-github-files.js` - Copies required files to dist
 
