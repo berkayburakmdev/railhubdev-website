@@ -4,7 +4,7 @@ import { getPath } from '../utils/navigation';
 const t = translations.en;
 ---
 
-<nav class="fixed top-0 left-0 right-0 z-40 bg-dark-primary/80 backdrop-blur-md border-b border-white/10">
+<nav class="fixed top-12 left-0 right-0 z-40 bg-dark-primary/80 backdrop-blur-md border-b border-white/10">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between h-16">
       <a href={getPath('/')} class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -30,7 +30,7 @@ const t = translations.en;
   </div>
 </nav>
 
-<div id="mobile-menu" class="fixed inset-0 top-16 z-30 md:hidden bg-dark-primary/95 backdrop-blur-md border-b border-white/10 hidden">
+<div id="mobile-menu" class="fixed inset-0 top-28 z-30 md:hidden bg-dark-primary/95 backdrop-blur-md border-b border-white/10 hidden">
   <div class="flex flex-col p-4 gap-4">
     <a href={getPath('/')} class="text-gray-300 hover:text-white transition-colors py-2">{t.nav.home}</a>
     <a href={getPath('/about')} class="text-gray-300 hover:text-white transition-colors py-2">{t.nav.about}</a>

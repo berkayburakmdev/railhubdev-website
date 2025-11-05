@@ -2,6 +2,11 @@
 
 Modern, multi-page corporate website built with Astro for GitHub Pages deployment.
 
+> **⚠️ Educational Project Notice**
+>
+> This project is developed for educational purposes only and does not reflect real-world data or services.
+> All content, projects, and information presented are fictional and created solely for learning and demonstration purposes.
+
 ## 🚀 Live Demo
 
 [berkayburakmdev.github.io/railhubdev-website](https://berkayburakmdev.github.io/railhubdev-website/)
@@ -50,6 +55,7 @@ This project is fully configured for GitHub Pages deployment:
 
 ## Features
 
+- 🎓 **Educational Project Notice** - Clear disclaimer banner at the top
 - 🌙 Dark theme (optimized for developer experience)
 - 🎨 Modern design with Tailwind CSS
 - ⚡ Fast static site generation with Astro

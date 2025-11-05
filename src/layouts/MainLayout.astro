@@ -21,6 +21,15 @@ const { title = 'RailDevHub' } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <!-- Educational Notice Banner -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-4 px-4 text-xs md:text-sm shadow-lg">
+      <div class="container mx-auto max-w-6xl">
+        <span class="font-medium">🎓 Educational Project</span>
+        <span class="mx-1 md:mx-2 hidden sm:inline">•</span>
+        <span class="block sm:inline mt-1 sm:mt-0">This website is created for learning purposes only and does not represent real data or services</span>
+      </div>
+    </div>
+
     <Navigation />
     <main>
       <slot />
